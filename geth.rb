@@ -17,7 +17,7 @@ class Geth < Formula
     mkdir_p buildpath/"src/github.com/ethereumproject/"
     ln_sf buildpath, buildpath/"src/github.com/ethereumproject/go-ethereum"
     system "go", "env" # Debug env
-    system "go", "get", "./..."
+    system "go", "get", "-v", "./..."
     system "go", "build", "-o", "geth", "./cmd/geth"
     bin.install 'geth'
   end
