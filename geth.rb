@@ -3,24 +3,12 @@ require 'formula'
 
 class Geth < Formula
   homepage 'https://github.com/ethereumproject/go-ethereum'
-  url 'https://github.com/ethereumproject/go-ethereum.git', :tag => 'v4.1.0'
-
-  devel do
-    url 'https://github.com/ethereumproject/go-ethereum.git', :branch => 'master'
-  end
-
-  depends_on 'go' => :build
+  url "https://github.com/ethereumproject/go-ethereum/releases/download/v4.1.0/geth-classic-osx-v4.1.0.tar.gz"
+  version "4.1.0"
+  sha256 "ede6201104c7e0715ac70dd5ce9010d11cda12f4c9bae47181815221fc4acf0f"
 
   def install
-    ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go/libexec"
-    # ENV["GOPATH"] = buildpath
-    mkdir_p buildpath/"src/github.com/ethereumproject/"
-    ln_sf buildpath, buildpath/"src/github.com/ethereumproject/go-ethereum"
-    system "go", "env" # Debug env
-    system "go", "install", "./cmd/geth"
-    # system "go", "get", "-v", "./..."
-    # system "go", "build", "-o", "geth", "./cmd/geth"
-    # bin.install 'geth'
+    bin.install 'geth'
   end
 
   test do
