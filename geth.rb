@@ -14,7 +14,7 @@ class Geth < Formula
   def install
     ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go/libexec"
     system "go", "env" # Debug env
-    system "go", "build", "-o", "geth", "."
+    system "go", "build", "-o", "geth", "cmd/geth"
     bin.install 'geth'
   end
 
