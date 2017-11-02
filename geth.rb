@@ -13,13 +13,14 @@ class Geth < Formula
 
   def install
     ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go/libexec"
-    ENV["GOPATH"] = buildpath
+    # ENV["GOPATH"] = buildpath
     mkdir_p buildpath/"src/github.com/ethereumproject/"
     ln_sf buildpath, buildpath/"src/github.com/ethereumproject/go-ethereum"
     system "go", "env" # Debug env
-    system "go", "get", "-v", buildpath/"src/github.com/ethereumproject/go-ethereum/..."
-    system "go", "build", "-o", "geth", buildpath/"src/github.com/ethereumproject/go-ethereum/cmd/geth"
-    bin.install 'geth'
+    system "go", "install", "./cmd/geth"
+    # system "go", "get", "-v", "./..."
+    # system "go", "build", "-o", "geth", "./cmd/geth"
+    # bin.install 'geth'
   end
 
   test do
