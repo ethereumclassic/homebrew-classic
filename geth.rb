@@ -1,4 +1,3 @@
-
 require 'formula'
 
 class Geth < Formula
