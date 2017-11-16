@@ -1,3 +1,5 @@
+require 'cask'
+
 cask 'emeraldwallet' do
   version "0.6.0" # :latest
   # sha256 :no_check
