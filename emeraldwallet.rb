@@ -1,7 +1,6 @@
 require 'cask'
 
-class EmeraldWallet < Cask
-# cask 'emeraldwallet' do
+cask 'emeraldwallet' do
   version "0.6.0" # :latest
   # sha256 :no_check
   sha256 "0569e8ba52c845626fd6815ed74e3a747894ac370e71ea91b8c3ae543ba54f33"
