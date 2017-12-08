@@ -1,6 +1,6 @@
 require 'formula'
 
-class EmeraldCLI < Formula
+class EmeraldCli < Formula
   homepage 'https://github.com/ethereumproject/emerald-cli'
   # https://github.com/ethereumproject/emerald-cli/releases/download/v0.18.0/emerald-cli-osx-v0.18.1-832bba6.zip
   url "https://github.com/ethereumproject/emerald-cli/releases/download/v0.18.0/emerald-cli-osx-v0.18.1-832bba6.zip"
