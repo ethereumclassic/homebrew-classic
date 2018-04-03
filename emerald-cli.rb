@@ -2,11 +2,9 @@ require 'formula'
 
 class EmeraldCli < Formula
   homepage 'https://github.com/ethereumproject/emerald-cli'
-  # https://github.com/ethereumproject/emerald-cli/releases/download/v0.18.0/emerald-cli-osx-v0.18.1-832bba6.zip
-  url "https://github.com/ethereumproject/emerald-cli/releases/download/v0.19.0/emerald-cli-osx-v0.19.3-113a3e3.zip"
-  version "0.19.0"
-  # eg. openssl sha -sha256 geth-classic-osx-v4.1.1.tar.gz
-  sha256 "1b02cfb3b63df43b5355d80ccf737723eed4e3fec45388c9020d4fbdea4906b6"
+  url "https://github.com/ETCDEVTeam/emerald-cli/releases/download/v0.21.0/emerald-cli-v0.21.0-OSX-x86_64.tar.gz"
+  version "0.21.0"
+  sha256 "ce1de80b80e21a64baf7dc260f4f5aead4951fe38594b50567a37efc9d80a1e7"
 
   def install
     bin.install 'emerald'
