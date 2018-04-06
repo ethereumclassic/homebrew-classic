@@ -7,8 +7,7 @@ class EmeraldCli < Formula
   sha256 "ce1de80b80e21a64baf7dc260f4f5aead4951fe38594b50567a37efc9d80a1e7"
 
   def install
-    bin.install Dir["target/release/*"]
-    # bin.install 'target/release/emerald'
+    bin.install 'target/release/emerald'
   end
 
   test do
