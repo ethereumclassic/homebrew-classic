@@ -2,9 +2,9 @@ require 'formula'
 
 class Geth < Formula
   homepage 'https://github.com/ethereumproject/go-ethereum'
-  url "http://builds.etcdevteam.com/go-ethereum/v5.4.x/geth-classic-osx-v5.4.3-5291a28.tar.gz"
-  version "5.4.3"
-  sha256 "52518625696fd315379e9eff741eb8c26506e376b377446645e4ebeee87d636b"
+  url "http://builds.etcdevteam.com/go-ethereum/v5.5.x/geth-classic-osx-v5.5.0-382aa8f.tar.gz"
+  version "5.5.0"
+  sha256 "74ca78979c647fc15007a85453f05196105a4512cfbb27b8587f4b17fb7d84a5"
 
 
   def install
